@@ -29,7 +29,7 @@ const ExpenseFilter = (props) => {
     <div className='expenses-filter'>
       <div className='expenses-filter__control'>
         <label>Filter by Title</label>
-        <input value={searchTitle} onChange={onChangeSearchTitle} data-testid="searchInput" style={{ padding : "0.3rem"}} />
+        <input value={searchTitle} placeholder='Search...' onChange={onChangeSearchTitle} data-testid="searchInput" style={{ padding : "0.3rem"}} />
       </div>
       <div className='expenses-filter__control'>
         <label>Filter by year</label>
