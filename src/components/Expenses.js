@@ -7,8 +7,8 @@ function Expenses({ expenses, filterData, setFilterData }) {
   const [searchTitle, setSearchTitle] = useState('')
 
   useEffect(() => {
-    if (filteredyear != "-999") {
-      let data = expenses.filter(i => ((i.date.getFullYear() == filteredyear) && ((i.title.toLowerCase().includes(searchTitle.toLowerCase())))))
+    if (filteredyear !== "-999") {
+      let data = expenses.filter(i => ((i.date.getFullYear() === filteredyear) && ((i.title.toLowerCase().includes(searchTitle.toLowerCase())))))
       setFilterData(data)
     }
     else {
