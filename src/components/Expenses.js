@@ -15,7 +15,7 @@ function Expenses({ expenses, filterData, setFilterData }) {
       let data = expenses.filter(i => ((i.title.toLowerCase().includes(searchTitle.toLowerCase()))))
       setFilterData(data)
     }
-  }, [filteredyear, expenses, searchTitle])
+  }, [filteredyear, expenses, searchTitle, setFilterData])
 
   const filterhandler = (selectedyear) => {
     setfilteredyear(selectedyear)

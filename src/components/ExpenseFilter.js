@@ -22,7 +22,7 @@ const ExpenseFilter = (props) => {
 
   const onChangeSearchTitle = (e) => {
     setSearchTitle(e.target.value)
-    let data = props.expenses.filter(i => ((i.title.toLowerCase().includes(e.target.value.toLowerCase())) && (props.selected == "-999" ? true : i.date.getFullYear() == props.selected)))
+    let data = props.expenses.filter(i => ((i.title.toLowerCase().includes(e.target.value.toLowerCase())) && (props.selected === "-999" ? true : i.date.getFullYear() === props.selected)))
     props.setFilterData(data)
   }
   return (

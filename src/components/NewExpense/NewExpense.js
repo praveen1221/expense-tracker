@@ -3,7 +3,7 @@ import './NewExpense.css';
 import ExpenseForm from './ExpenseForm';
 function NewExpense(props) {
   const submitformhandler = (enteredexpensedata) => {
-    if (enteredexpensedata.title == "" || enteredexpensedata.amount == "") {
+    if (enteredexpensedata.title === "" || enteredexpensedata.amount === "") {
       alert("Please Enter the Title and Amount")
       return;
     }
